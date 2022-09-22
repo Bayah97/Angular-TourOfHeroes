@@ -1,0 +1,16 @@
+<!--Use UppercasePipe-->
+<div *ngIf="hero">
+<h2>{{hero.name | uppercase}} Details</h2> 
+<hr>
+<div><span>Hero id: </span>{{hero.id}}</div>
+<!--Two way binding-->
+<div>
+    <label for="hero-name">Hero name: </label>
+    <input id="hero-name" [(ngModel)]="hero.name" placeholder="name">
+    &nbsp;
+    <button type="button" (click)="save()">Save</button>
+    <button type="button" (click)="goBack()">Go Back</button>
+</div>
+</div>
+
+
